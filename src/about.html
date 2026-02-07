@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css"
+        integrity="sha512-NhLySQDkiKSKnT+R795uaHWRQ7D3VuIvgeOLCK8cWq4w5fq4sWF90gj8eURpTqn/f1mFzqClpOz8JPlgVTLfFw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="bg-black">
+   <header class="flex items-center justify-between px-4 py-4 bg-black">
+  <h1 class="flex items-center text-2xl font-bold text-white">
+    <span class="font-bold text-2xl hover:text-sky-400 cursor-pointer ml-2.5">SERIGNE</span><span class="font-bold text-2xl text-[#D3E97A] hover:text-sky-400 cursor-pointer ml-2.5">KA</span>
+  </h1>
+
+  <!-- Hamburger mobile -->
+  <button id="menu-btn" class="sm:hidden text-white text-2xl">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <!-- Menu -->
+  <nav id="menu" class="hidden sm:flex gap-6 text-white font-poppins">
+    <a href="about.html" class="hover:text-amber-300">Projets</a>
+    <a href="#Apropos" class="hover:text-amber-300">À propos</a>
+    <a href="#Contact" class="hover:text-amber-300">Contact</a>
+  </nav>
+</header>
+
+<script>
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
+
+  <section class="flex flex-col lg:flex-row items-center justify-center px-4 lg:px-12 mt-16 gap-8">
+  <!-- Texte -->
+  <div class="lg:w-1/2">
+    <h2 class="text-3xl font-bold text-white mb-4">À PROPOS DE MOI</h2>
+    <p class="text-white mb-4">
+      Je suis développeur front-end basé à Dakar, avec une formation en génie informatique.
+      Passionné et curieux, j’explore React.js, Laravel et je m’intéresse aussi au design. En dehors du code, j’aime le football et la photographie.
+    </p>
+    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4 justify-center items-center">
+      <button class="bg-[#D3E97A] px-4 py-2 rounded-2xl font-bold hover:bg-amber-400 transition">
+        TÉLÉCHARGER CV <i class="fa-solid fa-download"></i>
+      </button>
+      <div class="flex gap-4 text-3xl mt-2 sm:mt-0">
+        <i class="fa-brands fa-linkedin-in text-[#D3E97A]"></i>
+        <i class="fa-brands fa-github text-[#D3E97A]"></i>
+        <a href="https://taplink.cc/serignka">
+          <i class="fa-brands fa-whatsapp text-[#D3E97A]"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <div class="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
+    <img src="gar.png" alt="Moi" class="rounded-3xl w-64 lg:w-auto">
+  </div>
+</section>
+
+    <section class="px-4 lg:px-12 mt-16">
+  <h2 class="text-3xl font-bold text-white mb-4 text-center">MES COMPÉTENCES</h2>
+  <p class="text-white text-center mb-6">
+    Je suis toujours à la recherche de nouvelles compétences à développer et relever des défis.
+  </p>
+
+  <div class="flex flex-wrap justify-center gap-4">
+    <span class="px-4 py-1 rounded-2xl bg-black text-white border border-amber-50 cursor-pointer">HTML</span>
+    <span class="px-4 py-1 rounded-2xl bg-black text-white border border-amber-50 cursor-pointer">CSS</span>
+    <span class="px-4 py-1 rounded-2xl bg-black text-white border border-amber-50 cursor-pointer">JAVASCRIPT</span>
+    <span class="px-4 py-1 rounded-2xl bg-black text-white border border-amber-50 cursor-pointer">JQUERY</span>
+    <span class="px-4 py-1 rounded-2xl bg-black text-white border border-amber-50 cursor-pointer">BOOTSTRAP</span>
+    <span class="px-4 py-1 rounded-2xl bg-black text-white border border-amber-50 cursor-pointer">FIGMA</span>
+    <span class="px-4 py-1 rounded-2xl bg-black text-white border border-amber-50 cursor-pointer">TAILWIND CSS</span>
+  </div>
+</section>
+    <hr class=" text-amber-100 mt-10">
+
+   <section class="px-4 lg:px-12 mt-16">
+  <h2 class="text-3xl font-bold text-white mb-6 text-center">MES EXPERIENCES</h2>
+
+  <div class="flex flex-col lg:flex-row gap-8 justify-center">
+    <div class="lg:w-1/2">
+      <h3 class="text-xl text-white font-semibold">Développeur freelance</h3>
+      <span class="text-white text-sm">Nov 2023 — Present</span>
+      <p class="text-white mt-2">
+        Conception et réalisation de solutions web adaptées aux besoins des clients. Livrables de haute qualité, accessibilité et performance.
+      </p>
+    </div>
+
+    <div class="lg:w-1/2">
+      <h3 class="text-xl text-white font-semibold">Stagiaire Front-End</h3>
+      <span class="text-white text-sm">Sep 2023 — Nov 2023 | Damel-Tech</span>
+      <p class="text-white mt-2">
+        Développement de solutions digitales pour PME et startups avec une équipe de 25 collaborateurs.
+      </p>
+    </div>
+  </div>
+</section>
+    <hr class=" text-amber-100 mt-20">
+
+    <footer id="Contact" class="text-white mt-28 px-4 lg:px-12 flex flex-col gap-8">
+  <hr class="bg-amber-200 h-px">
+
+  <div class="flex flex-col lg:flex-row justify-between gap-8">
+    <!-- Infos contact -->
+    <div class="flex flex-col">
+      <h2 class="mt-6 text-3xl font-bold">ENTRONS EN CONTACT</h2>
+      <p class="mt-2 text-sm sm:text-base">
+        Dites bonjour à <u class="text-amber-200 cursor-pointer">serigneka445@gmail.com</u><br>
+        Pour en savoir plus, voici mon CV
+      </p>
+
+      <div class="flex gap-4 mt-4 text-2xl">
+        <i class="fa-brands fa-github text-[#D3E97A]"></i>
+        <i class="fa-brands fa-linkedin-in text-[#D3E97A]"></i>
+        <i class="fa-brands fa-x-twitter text-[#D3E97A]"></i>
+        <i class="fa-brands fa-instagram text-[#D3E97A]"></i>
+      </div>
+
+      <p class="mt-4 text-sm sm:text-base">&copy; 2026 SERIGNE KA</p>
+    </div>
+
+    <!-- Formulaire -->
+    <div class="flex flex-col gap-3 w-full lg:w-1/2">
+      <label for="name" class="text-white">NOM COMPLET</label>
+      <input type="text" id="name" placeholder="Nom complet"
+             class="w-full px-4 py-2 rounded-sm text-black border border-gray-300 focus:border-amber-400 focus:outline-none">
+
+      <label for="email" class="text-white">EMAIL</label>
+      <input type="email" id="email" placeholder="Email"
+             class="w-full px-4 py-2 rounded-sm text-black border border-gray-300 focus:border-amber-400 focus:outline-none">
+
+      <label for="subject" class="text-white">SUJET</label>
+      <input type="text" id="subject" placeholder="Sujet"
+             class="w-full px-4 py-2 rounded-sm text-black border border-gray-300 focus:border-amber-400 focus:outline-none">
+
+      <label for="message" class="text-white">MESSAGE</label>
+      <textarea id="message" placeholder="Votre message"
+                class="w-full px-4 py-2 rounded-sm text-black border border-gray-300 focus:border-amber-400 focus:outline-none resize-none"></textarea>
+
+      <button class="bg-[#D3E97A] text-black font-bold py-2 rounded-2xl mt-2 hover:bg-green-400 transition-colors">
+        ENVOYER
+      </button>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
