@@ -12,7 +12,7 @@
 </head>
 
 <body class="bg-black">
-  <header class="flex items-center justify-between px-4 py-4 bg-black">
+  <header class="flex items-center justify-between px-4 py-4 bg-black fixed w-full top-0 left-0 right-0 z-50 ">
     <h1 class="flex items-center text-2xl font-bold text-white">
       <span class="font-bold text-2xl hover:text-sky-400 cursor-pointer ml-2.5">SERIGNE</span><span
         class="font-bold text-2xl text-[#D3E97A] hover:text-sky-400 cursor-pointer ml-2.5">KA</span>
@@ -25,9 +25,13 @@
 
     <!-- Menu -->
     <nav id="menu" class="hidden sm:flex gap-6 text-white font-poppins">
-      <a href="about.html" class="hover:text-amber-300">Projets</a>
-      <a href="#Apropos" class="hover:text-amber-300">À propos</a>
-      <a href="#Contact" class="hover:text-amber-300">Contact</a>
+      <div class="hidden lg:flex py-1 px-2 rounded-3xl bg-[#D3E97A] hover:bg-green-400 transition-duration-500 hover:rotate-6"><i class="fa-solid fa-circle-left mr-1.5 mt-1" style="color: rgb(7, 7, 7);"></i>
+        <a href="index.html" class="  text-black font-bold">Retour</a>
+      </div>
+     
+      <a href="about.html" class="hover:text-amber-300 font-bold">Projets</a>
+      <a href="#Apropos" class="hover:text-amber-300 font-bold">À propos</a>
+      <a href="#Contact" class="hover:text-amber-300 font-bold">Contact</a>
     </nav>
   </header>
 
@@ -53,17 +57,18 @@
           class="inline-flex items-center bg-[#D3E97A] text-black font-bold py-1.5 rounded-3xl hover:bg-green-400 transition-colors w-56 justify-center">
           TÉLÉCHARGER CV <i class="fa-solid fa-download ml-2"></i>
         </a>
-        <a href="index.html"
+        <a href="index.html#Projets"
           class="inline-flex items-center bg-[#d2d2cd] text-black font-bold py-1.5 rounded-3xl hover:bg-green-400 transition-colors w-56 justify-center">
           VOIR MES PROJETS
         </a>
       </div>
+
     </div>
 
-    <!-- Colonne droite: Image (50% sur lg), fond blanc, image alignée en bas -->
+    <!-- Image -->
     <div
-      class="w-full lg:w-1/2 bg-white rounded-3xl mt-8 lg:mt-0 overflow-hidden lg:h-screen lg:flex lg:items-end lg:justify-center">
-      <img src="gar.png" alt="Moi" class="w-full object-cover lg:h-[85vh] lg:w-auto">
+      class=" bg-amber-50 w-full rounded-3xl mt-8 flex justify-center items-center lg:w-full">
+      <img src="gar.png" alt="Moi" class=" flex justify-center items-center rounded-3xl ">
     </div>
   </section>
 
@@ -187,15 +192,15 @@
       <div class="flex flex-col mb-10 gap-3 w-full lg:w-1/2 order-2 lg:order-3">
         <label for="name" class="text-white">NOM COMPLET</label>
         <input type="text" id="name" placeholder="Nom complet"
-          class=" text-white w-full px-4 py-2 rounded-sm text-black border border-gray-100">
+          class=" text-white w-full px-4 py-2 rounded-sm  border border-gray-100">
 
         <label for="email" class="text-white">EMAIL</label>
         <input type="email" id="email" placeholder="Email"
-          class=" text-white w-full px-4 py-2 rounded-sm text-black border border-gray-100">
+          class=" text-white w-full px-4 py-2 rounded-sm  border border-gray-100">
 
         <label for="subject" class="text-white">SUJET</label>
         <input type="text" id="subject" placeholder="Sujet"
-          class=" text-white w-full px-4 py-2 rounded-sm text-white border border-gray-100">
+          class=" text-white w-full px-4 py-2 rounded-sm  border border-gray-100">
 
         <label for="message" class="text-white">MESSAGE</label>
         <textarea id="message" placeholder="Votre message"
